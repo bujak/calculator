@@ -3,7 +3,28 @@ Calculator 1.0
 Tomasz Bujakowski, Codecool 2016
 """
 
+# calculatig function
+
+def calc (num1, num2):
+    if operator == "+":
+        result = num1 + num2
+        print(num1, '+', num2, '=', result)
+    elif operator == "-":
+            result = num1 - num2
+            print(num1, '-', num2, '=', result)
+    elif operator == "*":
+            result = num1 * num2
+            print(num1, '*', num2, '=', result)
+    elif operator == "/":
+            result = num1 / num2
+            print(num1, '/', num2, '=', result)
+    elif operator == "^":
+            result = num1 ** num2
+            print(num1, '^', num2, '=', result)
+
 counting = True
+
+# main program
 
 while counting:
 
@@ -29,18 +50,4 @@ while counting:
 
     print(str(num2) + " entered")
 
-    if operator == "+":
-        result = num1 + num2
-        print(num1, '+', num2, '=', result)
-    elif operator == "-":
-        result = num1 - num2
-        print(num1, '-', num2, '=', result)
-    elif operator == "*":
-        result = num1 * num2
-        print(num1, '*', num2, '=', result)
-    elif operator == "/":
-        result = num1 / num2
-        print(num1, '/', num2, '=', result)
-    elif operator == "^":
-        result = num1 ** num2
-        print(num1, '^', num2, '=', result)
+    calc(num1, num2)
